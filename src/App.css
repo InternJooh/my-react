@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.border {
+  border: solid black;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.container div {
+  display: inline-block;
+}

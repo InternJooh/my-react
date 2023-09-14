@@ -1,0 +1,9 @@
+.SideContent {
+  width: 423px;
+  height: 100vh;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  background-color: white;
+}
