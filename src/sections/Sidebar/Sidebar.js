@@ -2,9 +2,24 @@ import './Sidebar.css';
 import '../../App.css';
 import { IconButton } from '../../components/IconButton';
 
-export function Sidebar({ activeIndex, onClick }) {
+interface SidebarProps {
+  activeIndex:number;
+  onClick:(event:Event)=>void;
+}
+
+interface ButtonData {
+  text:TextType;
+  icon?:String;
+}
+
+type TextType = '_active' | 'disabled'
+
+export function Sidebar({ activeIndex, onClick }:SidebarProps) {
   const textToAdd = `_active`;
-  const buttonData = [
+  const buttonData:ButtonData[] = [
+    {
+      text: 'sss',
+    },
     {
       text: '홈',
       icon: `../../../images/sideBar/home.svg`
