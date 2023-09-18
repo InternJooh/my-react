@@ -33,6 +33,9 @@ function App() {
     <div className="App">
       <Sidebar activeIndex={sidebarActive} onClick={handleNavClick} />
       {sideContentVisible && <SideContent />}
+      {[1,2,3,4].map((val)=>{
+        return <div>{val}</div>
+      })}
       <Map onClick={handleNavClick} />
     </div>
   );

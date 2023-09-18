@@ -101,3 +101,97 @@
 .map-button:last-child img {
   max-width: 30px;
 }
+
+.sisay-average {
+  background-color: #4373F4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 10px 8px;
+  font-weight: 700;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 250px;
+  margin-right: 15px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.naver-link {
+  height: 10px;
+  width: 45px;
+  margin-right: 5px;
+}
+
+.naver-link img {
+  height: 100%;
+  width: 100%;
+}
+
+.search-bar {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  padding: 6px 180px 5px 8px;
+  top: 15px;
+  left: 20px;
+  border-radius: 8px;
+}
+
+.search-bar button {
+  background-color: white;
+  border: none;;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.search-bar button:first-child {
+  position: relative;
+  top: 3px;
+  right: 2px;
+  padding-right: 0;
+}
+
+.filter-section {
+  position: absolute;
+  display: flex;
+  top: 18px;
+  left: 455px;
+}
+
+.filter-button {
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 6px 12px;
+  font-weight: 900;
+  margin-right: 7px;
+  height: 35px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 14%);
+}
+
+.filter-button.filtered {
+  background-color: #4373F4;
+  color: white;
+}
+
+.filter-button.unfiltered {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+.filter-button.my-filter {
+  background-color: white;
+  color: #4373F4;
+  border: 1px solid #4373F4;
+}

@@ -17,7 +17,7 @@ export function TopRight({ onClick1, onClick2 }) {
   ]
 
   return (
-    <div class="top-right">
+    <div className="top-right">
       {buttonData.map((button, index) => {
         return (<IconButton key={index} icon={button.url} onClick={button.onClick} />)
       })}
