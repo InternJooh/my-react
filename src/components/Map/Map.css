@@ -1,8 +1,0 @@
-.Map {
-  background-color: #A5D1F2;
-  position: absolute;
-  left: 70px;
-  top: 0;
-  bottom: 0;
-  width: calc(100% - 70px);
-}

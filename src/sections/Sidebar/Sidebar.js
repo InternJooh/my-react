@@ -1,6 +1,6 @@
 import './Sidebar.css';
 import '../../App.css';
-import { IconTextButton } from './IconTextButton';
+import { IconButton } from '../../components/IconButton';
 
 export function Sidebar({ activeIndex, onClick }) {
   const textToAdd = `_active`;
@@ -32,7 +32,7 @@ export function Sidebar({ activeIndex, onClick }) {
       {buttonData.map((button,index) => {
         const icon = index === activeIndex && index !== 2 ? insertStringAtIndex(button.icon, textToAdd) : button.icon;
         const status = index === activeIndex ? true : false;
-        return (<IconTextButton key={index} activeStatus={status} icon={icon} text={button.text} onClick={onClick} />)
+        return (<IconButton key={index} activeStatus={status} icon={icon} text={button.text} onClick={onClick} />)
       })}
     </div>
   )

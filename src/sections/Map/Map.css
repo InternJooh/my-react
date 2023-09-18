@@ -1,0 +1,103 @@
+.Map {
+  background-color: #A5D1F2;
+  position: absolute;
+  left: 70px;
+  top: 0;
+  bottom: 0;
+  width: calc(100% - 70px);
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 6px;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 16px 0 0;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 16%);
+  text-align: center;
+  padding: 0; 
+}
+
+.icon-only img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal {
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  position: fixed;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circular-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  margin-top: 12px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 16%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.circular-button:first-child {
+  color: rgb(177, 163, 163);
+}
+
+.circular {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 40px 16px;
+}
+
+.map-control {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 160px 19px;
+}
+
+.map-button {
+  margin: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.map-button img {
+  max-width: 25px;
+}
+
+.map-button:first-child {
+  border-bottom-left-radius: 0; /* No radius for bottom-left corner */
+  border-bottom-right-radius: 0; /* No radius for bottom-right corner */;
+}
+
+.map-button:nth-child(2) {
+  border-top-left-radius: 0; /* No radius for bottom-left corner */
+  border-top-right-radius: 0; /* No radius for bottom-right corner */;
+}
+
+.map-button:last-child {
+  margin-top: 15px;
+}
+
+.map-button:last-child img {
+  max-width: 30px;
+}

@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import { Map } from './components/Map/Map';
-import { Sidebar } from './components/Sidebar/Sidebar';
-import { SideContent } from './components/SideContent/SideContent';
+import { Map } from './sections/Map/Map';
+import { Sidebar } from './sections/Sidebar/Sidebar';
+import { SideContent } from './sections/SideContent/SideContent';
 import { useState } from 'react';
 
 function App() {
-  const sidebarOpen = ['홈', '내집내집', '커뮤니티', '메뉴'];
+  const sidebarOpen = ['홈', '', '내집내집', '커뮤니티', '메뉴'];
   const [sideContentVisible, setSideContentVisible] = useState(false);
   /* default 지도 active */
   const [sidebarActive, setSidebarActive] = useState(1);
@@ -18,7 +18,10 @@ function App() {
     let indexToChange = sidebarOpen.indexOf(text);
     if (indexToChange > -1) {
       sideContentVisible || setSideContentVisible(!sideContentVisible);
-      indexToChange !== 0 && indexToChange++;
+      if (indexToChange === 1) {
+        setSidebarActive(5);
+        return;
+      }
       setSidebarActive(indexToChange);
     } else {
       sideContentVisible && setSideContentVisible(!sideContentVisible);
@@ -30,7 +33,7 @@ function App() {
     <div className="App">
       <Sidebar activeIndex={sidebarActive} onClick={handleNavClick} />
       {sideContentVisible && <SideContent />}
-      <Map />
+      <Map onClick={handleNavClick} />
     </div>
   );
 }
